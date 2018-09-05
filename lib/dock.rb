@@ -34,8 +34,9 @@ class Dock
       if boat[0].hours_rented > 3
         @max_rental_time % boat[0].hours_rented * boat[0].price_per_hour
       else
-      boat[0].hours_rented * boat[0].price_per_hour
+        boat[0].hours_rented * boat[0].price_per_hour
       end
     end.sum
   end
+
 end

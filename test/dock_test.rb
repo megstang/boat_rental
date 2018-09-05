@@ -76,8 +76,8 @@ class DockTest <Minitest::Test
     assert_equal 105, dock.revenue
   end
 
-  def test_can_calculate_revenue_for_second_renter
-    skip
+  def test_can_calculate_revenue_2
+
     dock = Dock.new("The Rowing Dock", 3)
     kayak_1 = Boat.new(:kayak, 20)
     kayak_2 = Boat.new(:kayak, 20)
@@ -97,7 +97,8 @@ class DockTest <Minitest::Test
     dock.return(sup_1)
     dock.return(sup_2)
 
-    assert_equal 195, dock.revenue
+    assert_equal 90, dock.revenue
   end
+
 
 end
